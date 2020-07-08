@@ -1,0 +1,11 @@
+{{ if .IsNamedParams }}
+    <a href="https://shell.azure.com/{{.Get "target"}}" target="_blank">
+        <img src="https://shell.azure.com/images/launchcloudshell.png" alt="">
+    </a>
+    <br />
+{{ else }}
+    <a href="https://shell.azure.com/{{.Get 0}}" target="_blank">
+        <img src="https://shell.azure.com/images/launchcloudshell.png" alt="">
+    </a>
+    <br />
+{{ end }}

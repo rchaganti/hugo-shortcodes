@@ -1,0 +1,11 @@
+{{ if .IsNamedParams }}
+    <a href="https://portal.azure.com/#create/Microsoft.Template/uri/{{.Get "href"}}" target="_blank">
+        <img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true" alt="">
+    </a>
+    <br />
+{{ else }}
+    <a href="https://portal.azure.com/#create/Microsoft.Template/uri/{{.Get 0}}" target="_blank">
+        <img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/deploytoazure.svg?sanitize=true" alt="">
+    </a>
+    <br />
+{{ end }}

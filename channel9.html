@@ -1,0 +1,23 @@
+{{ if .IsNamedParams }}
+    <center>
+        <iframe
+            src="{{.Get "src"}}/player"
+            width="640"
+            height="360"
+            frameBorder="0"
+            allowfullscreen="true">
+        </iframe>
+    </center>
+    <br />
+{{ else }}
+    <center>
+        <iframe
+            src="{{.Get 0}}/player"
+            width="640"
+            height="360"
+            frameBorder="0"
+            allowfullscreen="true">
+        </iframe>
+    </center>
+    <br />
+{{ end }}

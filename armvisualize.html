@@ -1,0 +1,11 @@
+{{ if .IsNamedParams }}
+    <a href="http://armviz.io/#/?load={{.Get "href"}}" target="_blank">
+        <img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/visualizebutton.svg?sanitize=true" alt="">
+    </a>
+    <br />
+{{ else }}
+    <a href="http://armviz.io/#/?load={{.Get 0}}" target="_blank">
+        <img src="https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/1-CONTRIBUTION-GUIDE/images/visualizebutton.svg?sanitize=true" alt="">
+    </a>
+    <br />
+{{ end }}
